@@ -1,0 +1,2217 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="https://schema.org/"
+     xmlns:schema1="http://schema.org/"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#"
+     xmlns:untitled-ontology-101="http://www.semanticweb.org/ali/ontologies/2022/6/untitled-ontology-10#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#actedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#actedIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasActors"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+        <rdfs:range rdf:resource="http://schema.org/Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#awardedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#awardedAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#awardedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#awardedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardedMovie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Year"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#belongsTo">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FilmIndustry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#cinematographyBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#cinematographyBy">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Cinematographer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#directed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#directed">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#directedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Director"/>
+        <rdfs:range rdf:resource="http://schema.org/Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#directedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#directedBy">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasActors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasActors">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasAudience -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasAudience">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://schema.org/Audience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasBudget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasBudget">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Budget"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasCastAndCrew -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasCastAndCrew">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasCastingDirector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasCastingDirector">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CastingDirector"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasCertification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasCertification">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Certification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasCity">
+        <rdfs:domain rdf:resource="http://schema.org/Country"/>
+        <rdfs:range rdf:resource="http://schema.org/City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasDuration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasDuration">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://schema.org/Duration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasEarning -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasEarning">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#WorldWideEarning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasExecutiveProducer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasExecutiveProducer">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ExecutiveProducer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasGenre">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasIMDBRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasIMDBRating">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDB"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasIMDBReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasIMDBReview">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDBReview"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasIntangibles -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasIntangibles">
+        <rdfs:domain rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:range rdf:resource="http://schema.org/Intangible"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasLanguage">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://schema.org/Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasMetaRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasMetaRating">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCritic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasMetaReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasMetaReview">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCriticReview"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasOrganization">
+        <rdfs:domain rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:range rdf:resource="http://schema.org/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasPhase1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasPhase1">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PreProduction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasPhase2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasPhase2">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Production"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasPhase3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasPhase3">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PerformanceAnalysis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasProductionHouse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasProductionHouse">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionCompany"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasRating">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://schema.org/Rating"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasReviews -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasReviews">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://schema.org/Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasRottenRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasRottenRating">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasRottenReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#hasRottenReview">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoesReview"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#musicComposedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#musicComposedBy">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MusicComposer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#nominatedFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#nominatedFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NominatedMovie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#nominatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#nominatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NominatedMovie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Year"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#produced -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#produced">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#producedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Producer"/>
+        <rdfs:range rdf:resource="http://schema.org/Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#producedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#producedBy">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Producer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#productionDesigner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#productionDesigner">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionDesigner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#releasedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#releasedIn">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Year"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#shootIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#shootIn">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://schema.org/Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#wonAward -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#wonAward">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardedMovie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#wonAwardIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#wonAwardIn">
+        <rdfs:domain rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:range rdf:resource="http://schema.org/Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#writtenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#writtenBy">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Writer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/abstract -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/abstract">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDBRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDBRating">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDBReview -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDBReview">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCriticRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCriticRating">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCriticReview -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCriticReview">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoesRatingInPercent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoesRatingInPercent">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoesReview -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoesReview">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#budget -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#budget">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#category -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#category">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#earning -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#earning">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#nominatedAward -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#nominatedAward">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#releasingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#releasingDate">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#winningAward -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#winningAward">
+        <rdfs:domain rdf:resource="http://schema.org/Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Audience -->
+
+    <owl:Class rdf:about="http://schema.org/Audience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PreProduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/City -->
+
+    <owl:Class rdf:about="http://schema.org/City">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Country -->
+
+    <owl:Class rdf:about="http://schema.org/Country">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/CreativeWork -->
+
+    <owl:Class rdf:about="http://schema.org/CreativeWork"/>
+    
+
+
+    <!-- http://schema.org/Duration -->
+
+    <owl:Class rdf:about="http://schema.org/Duration">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Intangible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Event -->
+
+    <owl:Class rdf:about="http://schema.org/Event"/>
+    
+
+
+    <!-- http://schema.org/Intangible -->
+
+    <owl:Class rdf:about="http://schema.org/Intangible"/>
+    
+
+
+    <!-- http://schema.org/Language -->
+
+    <owl:Class rdf:about="http://schema.org/Language">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Intangible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Movie -->
+
+    <owl:Class rdf:about="http://schema.org/Movie">
+        <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+    <owl:Class rdf:about="http://schema.org/Organization"/>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PreProduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Place -->
+
+    <owl:Class rdf:about="http://schema.org/Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Production"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Rating -->
+
+    <owl:Class rdf:about="http://schema.org/Rating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PerformanceAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Review -->
+
+    <owl:Class rdf:about="http://schema.org/Review">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PerformanceAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PerformanceAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardedMovie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardedMovie">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BoxOfficeEarning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BoxOfficeEarning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PerformanceAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Budget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Budget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PreProduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CastingDirector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CastingDirector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Certification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Certification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Production"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Cinematographer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Cinematographer">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Director">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ExecutiveProducer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ExecutiveProducer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Producer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FilmIndustry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FilmIndustry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Genre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PreProduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDB">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Rating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDBReview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDBReview">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCritic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCritic">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Rating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCriticReview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCriticReview">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MusicComposer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MusicComposer">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NominatedMovie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NominatedMovie">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PerformanceAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PerformanceAnalysis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PreProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PreProduction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Producer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Producer">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Production -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Production"/>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionCompany">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionDesigner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionDesigner">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoes">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Rating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoesReview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoesReview">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#WorldWideEarning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#WorldWideEarning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BoxOfficeEarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Writer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Writer">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Year"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ali/ontologies/2022/6/untitled-ontology-10#ChristmasThieves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ali/ontologies/2022/6/untitled-ontology-10#ChristmasThieves"/>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AcademyAwardUSA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AcademyAwardUSA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AcademyOfScienceFictionfantasyAndHorrorFilmsUSA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AcademyOfScienceFictionfantasyAndHorrorFilmsUSA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Adults -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Adults">
+        <rdf:type rdf:resource="http://schema.org/Audience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Adventure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Adventure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AlMashaelMovies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AlMashaelMovies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionCompany"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AndreaFazzini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AndreaFazzini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AndreaIervolino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AndreaIervolino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ExecutiveProducer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AndreaZoso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AndreaZoso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ExecutiveProducer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Animation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Animation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ArtiosAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ArtiosAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AstroBoy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AstroBoy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NominatedMovie"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Hollywood"/>
+        <cinematographyBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PepeValencia"/>
+        <directedBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#DavidBowers"/>
+        <hasActors rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CharlizeTheron"/>
+        <hasActors rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FreddieHighmore"/>
+        <hasActors rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#KristenBell"/>
+        <hasActors rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NicolasCage"/>
+        <hasAudience rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Kids"/>
+        <hasBudget rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$65000000"/>
+        <hasCastingDirector rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#LindaLamontagne"/>
+        <hasCertification rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PG"/>
+        <hasDuration rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#1h34m"/>
+        <hasEarning rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$39886986"/>
+        <hasExecutiveProducer rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CecilKramer"/>
+        <hasExecutiveProducer rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FrancisKao"/>
+        <hasExecutiveProducer rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#KenTsumura"/>
+        <hasExecutiveProducer rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PaulWang"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Action"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Adventure"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Animation"/>
+        <hasIMDBRating rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#6.2"/>
+        <hasIMDBReview rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#96Reviews"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#English"/>
+        <hasMetaRating rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#53"/>
+        <hasMetaReview rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#22Reviews"/>
+        <hasProductionHouse rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ImagiAnimationStudios"/>
+        <hasProductionHouse rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ImagiCrystal"/>
+        <hasProductionHouse rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#SummitEntertainment"/>
+        <hasRottenRating rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#50Percent"/>
+        <hasRottenReview rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#139Reviews"/>
+        <musicComposedBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JohnOttman"/>
+        <nominatedFor rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BestPerformanceinVoiceOverRole"/>
+        <nominatedFor rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#OutstandingAchievementInCasting"/>
+        <nominatedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2010"/>
+        <producedBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MaryannGarger"/>
+        <productionDesigner rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#SamMichlap"/>
+        <releasedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2009"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#David"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#TimothyHarris"/>
+        <schema1:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When an android replica of a boy is rejected by his aggrieved creator, he goes off to find his own identity in an adventure that would make him the greatest hero of his time.</schema1:abstract>
+        <IMDBRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.2</IMDBRating>
+        <IMDBReview rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</IMDBReview>
+        <MetaCriticRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</MetaCriticRating>
+        <MetaCriticReview rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</MetaCriticReview>
+        <RottenTomatoesRatingInPercent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</RottenTomatoesRatingInPercent>
+        <RottenTomatoesReview rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">139</RottenTomatoesReview>
+        <budget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65000000</budget>
+        <earning rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39886986</earning>
+        <nominatedAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BestPerformanceinVoiceOverRole</nominatedAward>
+        <nominatedAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OutstandingAchievementInCasting</nominatedAward>
+        <releasingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">February 5, 2010</releasingDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BAFTAAwards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BAFTAAwards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BAFTAChildrensAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BAFTAChildrensAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BAFTAAwards"/>
+        <category>BAFTAKidsVote-FeatureFilm</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BAFTAFilmAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BAFTAFilmAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BAFTAAwards"/>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BestAnimatedFilm</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BFCCAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BFCCAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BlackFilmCriticsCircleAward"/>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BestAnimatedFilm</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BOFCAAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BOFCAAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BostonOnlineFilmCriticsAssociation"/>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BestAnimatedFilm</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BestPerformanceinVoiceOverRole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BestPerformanceinVoiceOverRole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#YoungArtistAwards"/>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">YoungActor/Actress</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BlackFilmCriticsCircleAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BlackFilmCriticsCircleAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BostonOnlineFilmCriticsAssociation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BostonOnlineFilmCriticsAssociation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BrunoRosato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BrunoRosato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CastingDirector"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CecilKramer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CecilKramer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ExecutiveProducer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CharlizeTheron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CharlizeTheron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+        <actedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AstroBoy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChrisBuck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChrisBuck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Director"/>
+        <directed rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Frozen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChristmasThieves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChristmasThieves">
+        <rdf:type rdf:resource="http://schema.org/Movie"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CinemaOfUK"/>
+        <cinematographyBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PatrizioPatrizi"/>
+        <directedBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FrancescoCinquemani"/>
+        <hasActors rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#LorenzoMcGovernZaini"/>
+        <hasActors rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MiaMcGovernZaini"/>
+        <hasActors rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MichaelMadsen"/>
+        <hasActors rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#TomArnold"/>
+        <hasAudience rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Kids"/>
+        <hasBudget rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$6626910"/>
+        <hasCastingDirector rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BrunoRosato"/>
+        <hasCertification rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NR"/>
+        <hasDuration rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#1h17m"/>
+        <hasEarning rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$6856"/>
+        <hasExecutiveProducer rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AndreaZoso"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Animation"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Comedy"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Family"/>
+        <hasIMDBRating rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#3.9"/>
+        <hasIMDBReview rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#3Reviews"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#English"/>
+        <hasMetaRating rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#0"/>
+        <hasMetaReview rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#0Review"/>
+        <hasProductionHouse rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AlMashaelMovies"/>
+        <hasProductionHouse rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FenixEntertainment"/>
+        <hasProductionHouse rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ILBEStudios"/>
+        <hasRottenRating rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#0Percent"/>
+        <hasRottenReview rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#0Review"/>
+        <musicComposedBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#VittorioGiannelli"/>
+        <producedBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RiccardoDiPasquale"/>
+        <productionDesigner rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NelloGiorgetti"/>
+        <releasedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2021"/>
+        <shootIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Italy"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AndreaFazzini"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FerdinandoDellOmo"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MarioBellina"/>
+        <schema1:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two young kids end up spending Christmas eve alone and they mistake two burglars for Santa</schema1:abstract>
+        <IMDBRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.9</IMDBRating>
+        <IMDBReview rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</IMDBReview>
+        <MetaCriticRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</MetaCriticRating>
+        <MetaCriticReview rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</MetaCriticReview>
+        <RottenTomatoesRatingInPercent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</RottenTomatoesRatingInPercent>
+        <RottenTomatoesReview rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</RottenTomatoesReview>
+        <budget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6626910</budget>
+        <earning rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6856</earning>
+        <releasingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">November 29, 2021</releasingDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChristopheBeck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChristopheBeck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MusicComposer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChristopherAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChristopherAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChristopherAwards"/>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FeatureFilms</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChristopherAwards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChristopherAwards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Ciampino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Ciampino">
+        <rdf:type rdf:resource="http://schema.org/City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CinemaOfUK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CinemaOfUK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FilmIndustry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Comedy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Comedy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#David -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#David">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#DavidBowers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#DavidBowers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Director"/>
+        <directed rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AstroBoy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#DavidWomersley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#DavidWomersley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionDesigner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#English -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#English">
+        <rdf:type rdf:resource="http://schema.org/Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Family -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FenixEntertainment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FenixEntertainment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionCompany"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FerdinandoDellOmo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FerdinandoDellOmo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FrancescoCinquemani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FrancescoCinquemani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Director"/>
+        <directed rdf:resource="http://www.semanticweb.org/ali/ontologies/2022/6/untitled-ontology-10#ChristmasThieves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FrancisKao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FrancisKao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ExecutiveProducer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FreddieHighmore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FreddieHighmore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+        <actedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AstroBoy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Frozen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Frozen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardedMovie"/>
+        <awardedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2013"/>
+        <awardedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2014"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Hollywood"/>
+        <cinematographyBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MohitKallianpur"/>
+        <directedBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChrisBuck"/>
+        <directedBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JenniferLee"/>
+        <hasActors rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IdinaMenzel"/>
+        <hasActors rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JonathanGroff"/>
+        <hasActors rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JoshGad"/>
+        <hasActors rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#KristenBell"/>
+        <hasAudience rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Kids"/>
+        <hasBudget rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$150000000"/>
+        <hasCastingDirector rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JamieSparerRoberts"/>
+        <hasCertification rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PG"/>
+        <hasDuration rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#1h42m"/>
+        <hasEarning rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$1284540518"/>
+        <hasExecutiveProducer rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JohnLasseter"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Adventure"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Animation"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Comedy"/>
+        <hasIMDBRating rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#7.4"/>
+        <hasIMDBReview rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#1252Reviews"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#English"/>
+        <hasMetaRating rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#75"/>
+        <hasMetaReview rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#48Reviews"/>
+        <hasProductionHouse rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#WaltDisneyAnimationStudios"/>
+        <hasProductionHouse rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#WaltDisneyPictures"/>
+        <hasRottenRating rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#90Percent"/>
+        <hasRottenReview rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#251Reviews"/>
+        <musicComposedBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ChristopheBeck"/>
+        <producedBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PeterDelVecho"/>
+        <releasedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2013"/>
+        <shootIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Norway"/>
+        <wonAward rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BAFTAChildrensAward"/>
+        <wonAward rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BAFTAFilmAward"/>
+        <wonAward rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BFCCAward"/>
+        <wonAward rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#BOFCAAward"/>
+        <wonAward rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#GoldDerbyFilmAward"/>
+        <wonAward rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IGNAward"/>
+        <wonAward rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#LumiereAward"/>
+        <wonAward rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Oscar"/>
+        <wonAward rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#SierraAward"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#HansChristianAndersen"/>
+        <schema1:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fearless optimist Anna teams up with rugged mountain man Kristoff and his loyal reindeer Sven and sets off on an epic journey to find her sister Elsa, whose icy powers have trapped the kingdom of Arendelle in eternal winter. Encountering Everest-like conditions, mystical trolls and a hilarious snowman named Olaf, Anna and Kristoff battle the elements in a race to save the kingdom. From the outside Elsa looks poised, regal and reserved, but in reality she lives in fear as she wrestles with a mighty secret: she was born with the power to create ice and snow. It&apos;s a beautiful ability, but also extremely dangerous. Haunted by the moment her magic nearly killed her younger sister Anna, Elsa has isolated herself, spending every waking minute trying to suppress her growing powers. Her mounting emotions trigger the magic, accidentally setting off an eternal winter that she can&apos;t stop. She fears she&apos;s becoming a monster and that no one, not even her sister, can help her.</schema1:abstract>
+        <IMDBRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.4</IMDBRating>
+        <IMDBReview rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1252</IMDBReview>
+        <MetaCriticRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</MetaCriticRating>
+        <MetaCriticReview rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</MetaCriticReview>
+        <RottenTomatoesRatingInPercent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</RottenTomatoesRatingInPercent>
+        <RottenTomatoesReview rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">251</RottenTomatoesReview>
+        <budget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150000000</budget>
+        <earning rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1284540518</earning>
+        <releasingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">December 6, 2013</releasingDate>
+        <winningAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAFTAChildrensAward</winningAward>
+        <winningAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAFTAFilmAward</winningAward>
+        <winningAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFCCAward</winningAward>
+        <winningAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BOFCAAward</winningAward>
+        <winningAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChristopherAward</winningAward>
+        <winningAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GoldDerbyFilmAward</winningAward>
+        <winningAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GoldenTrailer</winningAward>
+        <winningAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGNAward</winningAward>
+        <winningAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LumiereAward</winningAward>
+        <winningAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar</winningAward>
+        <winningAward rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SierraAward</winningAward>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#General -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#General">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Certification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#GoldDerbyAwards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#GoldDerbyAwards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#GoldDerbyFilmAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#GoldDerbyFilmAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#GoldDerbyAwards"/>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AnimatedFeature</category>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OriginalSong</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#GoldenTrailer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#GoldenTrailer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#GoldenTrailerAwards"/>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BestAnimation/Family</category>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BestMusicTVSpot</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#GoldenTrailerAwards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#GoldenTrailerAwards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#HansChristianAndersen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#HansChristianAndersen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Hollywood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Hollywood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#FilmIndustry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IGNAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IGNAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IGNSummerMovieAward"/>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BestAnimatedMovie</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IGNSummerMovieAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IGNSummerMovieAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ILBEStudios -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ILBEStudios">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionCompany"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IdinaMenzel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IdinaMenzel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+        <actedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Frozen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ImagiAnimationStudios -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ImagiAnimationStudios">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionCompany"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ImagiCrystal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ImagiCrystal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionCompany"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Italy">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+        <hasCity rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Ciampino"/>
+        <hasCity rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Italy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JamieSparerRoberts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JamieSparerRoberts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CastingDirector"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Jennifer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Jennifer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JenniferLee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JenniferLee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Director"/>
+        <directed rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Frozen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JohnLasseter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JohnLasseter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ExecutiveProducer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JohnOttman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JohnOttman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MusicComposer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JonathanGroff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JonathanGroff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+        <actedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Frozen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JoshGad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#JoshGad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+        <actedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Frozen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#KenTsumura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#KenTsumura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ExecutiveProducer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Kids -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Kids">
+        <rdf:type rdf:resource="http://schema.org/Audience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#KristenBell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#KristenBell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+        <actedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AstroBoy"/>
+        <actedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Frozen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#LasVegasFilmCriticsSocietyAwards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#LasVegasFilmCriticsSocietyAwards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Lazio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Lazio">
+        <rdf:type rdf:resource="http://schema.org/City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#LindaLamontagne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#LindaLamontagne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#CastingDirector"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#LorenzoMcGovernZaini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#LorenzoMcGovernZaini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+        <actedIn rdf:resource="http://www.semanticweb.org/ali/ontologies/2022/6/untitled-ontology-10#ChristmasThieves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#LumiereAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#LumiereAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#3DCreativeArtsAwards"/>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Best3DFeature</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MarioBellina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MarioBellina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MaryannGarger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MaryannGarger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Producer"/>
+        <produced rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AstroBoy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MiaMcGovernZaini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MiaMcGovernZaini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+        <actedIn rdf:resource="http://www.semanticweb.org/ali/ontologies/2022/6/untitled-ontology-10#ChristmasThieves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MichaelMadsen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MichaelMadsen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+        <actedIn rdf:resource="http://www.semanticweb.org/ali/ontologies/2022/6/untitled-ontology-10#ChristmasThieves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MohitKallianpur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MohitKallianpur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Cinematographer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NC17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NC17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Certification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Certification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NelloGiorgetti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NelloGiorgetti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionDesigner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NicolasCage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#NicolasCage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+        <actedIn rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AstroBoy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Norway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Norway">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Oscar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Oscar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AcademyAwardUSA"/>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BestAchievementInMusicWrittenForMotionPictures,OriginalSong</category>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BestAnimatedFeatureFilmOfTheYear</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#OutstandingAchievementInCasting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#OutstandingAchievementInCasting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ArtiosAward"/>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AnimationFeature</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Certification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PG13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PG13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Certification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PatrizioPatrizi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PatrizioPatrizi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Cinematographer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PaulWang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PaulWang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ExecutiveProducer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PepeValencia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PepeValencia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Cinematographer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PeterDelVecho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#PeterDelVecho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Producer"/>
+        <produced rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Frozen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#R -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#R">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Certification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RiccardoDiPasquale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RiccardoDiPasquale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Producer"/>
+        <produced rdf:resource="http://www.semanticweb.org/ali/ontologies/2022/6/untitled-ontology-10#ChristmasThieves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#SamMichlap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#SamMichlap">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionDesigner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#SierraAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#SierraAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Award"/>
+        <awardedAt rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#LasVegasFilmCriticsSocietyAwards"/>
+        <category rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BestAnimatedFilm</category>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#SummitEntertainment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#SummitEntertainment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionCompany"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Teenagers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Teenagers">
+        <rdf:type rdf:resource="http://schema.org/Audience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#TimothyHarris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#TimothyHarris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Writer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#TomArnold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#TomArnold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Actor"/>
+        <actedIn rdf:resource="http://www.semanticweb.org/ali/ontologies/2022/6/untitled-ontology-10#ChristmasThieves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#UnitedStates -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#UnitedStates">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#VittorioGiannelli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#VittorioGiannelli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MusicComposer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#WaltDisneyAnimationStudios -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#WaltDisneyAnimationStudios">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionCompany"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#WaltDisneyPictures -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#WaltDisneyPictures">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#ProductionCompany"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#YoungArtistAwards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#YoungArtistAwards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$1284540518 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$1284540518">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#WorldWideEarning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$150000000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$150000000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Budget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$39886986 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$39886986">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#WorldWideEarning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$65000000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$65000000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Budget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$6626910 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$6626910">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Budget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$6856 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#$6856">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#WorldWideEarning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCritic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#0Percent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#0Percent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#0Review -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#0Review">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCriticReview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#0Reviews -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#0Reviews">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoesReview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#1h17m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#1h17m">
+        <rdf:type rdf:resource="http://schema.org/Duration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#1h34m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#1h34m">
+        <rdf:type rdf:resource="http://schema.org/Duration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#1h42m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#1h42m">
+        <rdf:type rdf:resource="http://schema.org/Duration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#1252Reviews -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#1252Reviews">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDBReview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#139Reviews -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#139Reviews">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoesReview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2013">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2014">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2015">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#Year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#22Reviews -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#22Reviews">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCriticReview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#251Reviews -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#251Reviews">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoesReview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#3DCreativeArtsAwards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#3DCreativeArtsAwards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#AwardCeremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#3Reviews -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#3Reviews">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDBReview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#3.9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#3.9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#48Reviews -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#48Reviews">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCriticReview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#50Percent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#50Percent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#53 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#53">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCritic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#6.2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#6.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#7.4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#7.4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#75 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#75">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#MetaCritic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#90Percent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#90Percent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#RottenTomatoes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#96Reviews -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#96Reviews">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khurram/ontologies/2023/4/untitled-ontology-10#IMDBReview"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
